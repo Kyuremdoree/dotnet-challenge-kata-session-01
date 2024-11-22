@@ -15,7 +15,7 @@ public static class ReverseStringKata
     {
         string[] strings = input.Split(' ');
         Array.Reverse(strings);
-        string result = strings.FirstOrDefault();
+        string result = strings.First();
         for (int i = 1; i < strings.Length; i++)
         {
             result += " " + strings[i];
